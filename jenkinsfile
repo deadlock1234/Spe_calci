@@ -34,11 +34,12 @@ pipeline {
         stage('Push Docker Images') {
             steps {
                 script {
+                   sh "docker login -u akshat2804 -p Up16cx7371$$"
                     // Tag and push Docker image to Docker Hub
-                    docker.withRegistry('', 'DockerHubCred') {
+
                         sh "docker tag spe_calculator akshat2804/spe_calculator:latest"
                         sh "docker push akshat2804/spe_calculator:latest"
-                    }
+                    
                 }
             }
         }
