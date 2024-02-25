@@ -4,7 +4,7 @@
   remote_user: farmanahmed
   become: false
   vars:
-    ansible_ssh_private_key_file: "/path/to/your/private_key"
+    ansible_ssh_private_key_file: "/Users/farmanahmed/.ssh/id_rsa.pub"
   tasks:
     - name: Pull Docker Image
       docker_image:
