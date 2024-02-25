@@ -36,8 +36,8 @@ pipeline {
                 script {
                     // Tag and push Docker image to Docker Hub
                     docker.withRegistry('', 'DockerHubCred') {
-                        sh "docker tag spe_calculator Akshat2804/spe_calculator:latest"
-                        sh "docker push Akshat2804/spe_calculator:latest"
+                        sh "docker tag spe_calculator akshat2804/spe_calculator:latest"
+                        sh "docker push akshat2804/spe_calculator:latest"
                     }
                 }
             }
