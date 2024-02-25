@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'docker build build -t spe_calculator .'
+                    sh 'docker buildx build -t spe_calculator .'
                 }
             }
         }
