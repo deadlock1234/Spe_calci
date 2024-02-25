@@ -1,0 +1,1 @@
+localhost ansible_user=farmanahmed ansible_ssh=farman@123
