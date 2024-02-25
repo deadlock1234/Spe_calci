@@ -1,5 +1,6 @@
 package org.example;
 import java.util.Scanner;
+import java.util.*;
 public class Main {
     static int factorial(int n) {
         if (n == 0 || n == 1) {
