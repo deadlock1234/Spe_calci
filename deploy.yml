@@ -3,6 +3,8 @@
   hosts: localhost
   remote_user: farmanahmed
   become: false
+  vars:
+    ansible_ssh_private_key_file: "/path/to/your/private_key"
   tasks:
     - name: Pull Docker Image
       docker_image:
