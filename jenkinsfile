@@ -35,11 +35,10 @@ pipeline {
             steps {
                 script {
                    sh "docker login -u akshat2804 -p Up16cx7371$$"
-                    // Tag and push Docker image to Docker Hub
-
-                        sh "docker tag spe_calculator akshat2804/spe_calculator:latest"
+                    // Tag and push Docker image to Docker 
+                   sh "docker tag spe_calculator akshat2804/spe_calculator:latest"
                         sh "docker push akshat2804/spe_calculator:latest"
-                    
+
                 }
             }
         }
